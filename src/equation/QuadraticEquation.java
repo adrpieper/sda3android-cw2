@@ -17,4 +17,12 @@ public class QuadraticEquation {
     public double calcDelta() {
         return b*b-4*a*c;
     }
+
+    public double calcX1() {
+        return (-b+Math.sqrt(calcDelta()))/(2*a);
+    }
+
+    public double calcX2() {
+        return (-b-Math.sqrt(calcDelta()))/(2*a);
+    }
 }
