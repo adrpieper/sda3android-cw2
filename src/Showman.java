@@ -1,12 +1,12 @@
-/**
- * Created by Adrian on 2017-02-25.
- */
-public class Zad8 {
+
+public class Showman {
 
     public static void main(String[] args) {
-        show(4);
+
+        show((double) 4);
         show(4.0);
-        show("HelloWorld");
+        Showman sho = new Showman();
+        sho.show("HelloWorld");
     }
 
     private static void show(int i) {
@@ -17,7 +17,7 @@ public class Zad8 {
 
         System.out.println(" liczba typu double : " + i);
     }
-    private static void show(String text) {
+    private void show(String text) {
 
         System.out.println(" text : " + text);
     }
