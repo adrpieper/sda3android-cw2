@@ -1,6 +1,8 @@
 
 public class Showman {
 
+    private static final String MY_NAME = "AdRIAN";
+
     public static void main(String[] args) {
 
         show((double) 4);
