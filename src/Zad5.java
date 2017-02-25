@@ -11,6 +11,9 @@ public class Zad5 {
         int i = 10;
         suma(i,5);
         System.out.println(i);
+        int[] tab = {2,34,3,2,1,11};
+        int tabMin = min(tab);
+        System.out.println("tabMin="+tabMin);
     }
 
     private static void suma(int c,int d) {
