@@ -17,7 +17,7 @@ public class Zad6 {
     }
 
     private static double poleSzescianu(double a) {
-        return a*a*6;
+        return poleKwadratu(a)*6;
     }
 
     private static double poleKola(double r) {
@@ -25,18 +25,18 @@ public class Zad6 {
     }
 
     private static double objetoscWalca(double r, double h) {
-        return r*r*Math.PI*h;
+        return poleKola(r)*h;
     }
 
     private static double objetoscStozka(double r, double h) {
-        return r*r*Math.PI*h/3;
+        return objetoscWalca(r,h)/3;
     }
 
     private static double objetoscSzescianu(double a) {
-        return a*a*a;
+        return poleKwadratu(a)*a;
     }
 
     private static double objetoscOstroslupa(double a, double h) {
-        return a*a*h/3;
+        return poleKwadratu(a)*h/3;
     }
 }
