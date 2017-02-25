@@ -34,4 +34,12 @@ public class MyMath {
             return b;
         }
     }
+
+    public static int pow (int a, int n) {
+        int wynik = 1;
+        for(int i =0 ; i <n ;i ++) {
+            wynik *= a;
+        }
+        return wynik;
+    }
 }
