@@ -21,7 +21,7 @@ public class Zad6 {
     }
 
     private static double poleKola(double r) {
-        return r*r*Math.PI;
+        return r*r* Math.PI;
     }
 
     private static double objetoscWalca(double r, double h) {
