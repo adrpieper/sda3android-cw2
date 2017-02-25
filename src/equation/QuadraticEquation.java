@@ -13,4 +13,8 @@ public class QuadraticEquation {
         this.b = b;
         this.c = c;
     }
+
+    public double calcDelta() {
+        return b*b-4*a*c;
+    }
 }
