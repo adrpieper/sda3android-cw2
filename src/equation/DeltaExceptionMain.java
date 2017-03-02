@@ -15,6 +15,14 @@ public class DeltaExceptionMain {
         double b = scanner.nextDouble();
         System.out.println("Podaj c");
         double c = scanner.nextDouble();
+        QuadraticEquation equation = new QuadraticEquation(a, b, c);
+
+        try {
+            System.out.println("x1="+equation.calcX1());
+            System.out.println("x2="+equation.calcX2());
+        } catch (DeltaException e) {
+            System.out.println("Delta jest ujemna!");
+        }
 
     }
 }
