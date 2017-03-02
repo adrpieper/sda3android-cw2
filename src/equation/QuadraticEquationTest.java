@@ -11,8 +11,13 @@ public class QuadraticEquationTest {
             System.out.println("Delta ujemna");
         }else {
             System.out.println("Delta dodatnia");
-            System.out.println("X1=" + equation.calcX1());
-            System.out.println("X2=" + equation.calcX2());
+            try {
+                System.out.println("X1=" + equation.calcX1());
+                System.out.println("X2=" + equation.calcX2());
+            }catch (DeltaException e) {
+
+            }
         }
+
     }
 }
