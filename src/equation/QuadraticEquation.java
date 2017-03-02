@@ -18,11 +18,17 @@ public class QuadraticEquation {
         return b*b-4*a*c;
     }
 
-    public double calcX1() {
+    public double calcX1() throws DeltaException{
+        if (calcDelta() < 0) {
+            throw new DeltaException();
+        }
         return (-b+Math.sqrt(calcDelta()))/(2*a);
     }
 
-    public double calcX2() {
+    public double calcX2() throws DeltaException{
+        if (calcDelta() < 0) {
+            throw new DeltaException();
+        }
         return (-b-Math.sqrt(calcDelta()))/(2*a);
     }
 }
